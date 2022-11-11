@@ -6,6 +6,8 @@
 <p>
 <%= form.label :body %> <br>
 <%= form.text_area :body %>
+<%= form.label :status %>
+<%= form.select :status, ['public', 'private'], selected: 'public' %>
 </p>
 <p>
 <%= form.submit %>

@@ -12,6 +12,8 @@
     <div>
       <%= form.label :body %><br>
       <%= form.text_field :body %>
+      <%= form.label :status %>
+      <%= form.select :status, ['public', 'private'], selected: 'public' %>
       <%= article.errors.full_messages_for(:body).each do |message| %>
       <div> <%= message %> </div>
       <% end %>

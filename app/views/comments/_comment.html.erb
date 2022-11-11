@@ -1,13 +1,23 @@
- <% unless comment.archived? %>
+ <% unless comment.archived? or comment.private?%>
  <p>
   <strong>Commenter:</strong>
   <%= comment.commenter %>
   <strong>Posted:</strong>
-  <%= comment.created_at %>
+  <% date = comment.created_at.to_date %>
+  <%= date.strftime('%m/%d/%y') %>
 </p>
 
 <p>
   <strong>Comment:</strong>
   <%= comment.body %>
 </p>
+<p>
+ <%= link_to "Destroy Comment", [comment.article, comment],
+ data: {
+                          turbo_method: :delete,
+                          turbo_confirm: "Are you sure?"
+                                }%>
+
+</p>
+
  <% end %>
