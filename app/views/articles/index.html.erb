@@ -1,10 +1,16 @@
-<h1>Hello Rails!</h1>
+<div class="title-container">
+<h1>Sogi Yhaman and Lady Shoki</h1>
+</div>
   <% @articles.each do |article| %>
   <% unless article.archived? %>
+  <div class="articles-container">
+  <p class="article-preview"><%=link_to article.title, article%></p>
+  </div>
   <% end %>
-  <p><%=link_to article.title, article%></p>
-  <%end%>
+  <% end %>
+<p class="new-container">
 <%= link_to "New Article", new_article_path %>
+<p>
 <h3>There are
 <%= Article.public_count %>
 posts as of now!

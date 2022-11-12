@@ -1,0 +1,174 @@
+.title-container {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    h1 {
+        margin-bottom: 10px;
+        font-size: 40px;
+        font-family: 'Nova Oval', cursive;
+    }
+    p {
+        margin: 10px 0;
+        font-size: 25px;
+        color: #888
+    }
+}
+
+.fixed-btn {
+    position: fixed;
+    right: 0;
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+    text-decoration: none;
+    font-family: 'Nova Oval', cursive;
+    font-size: 20px;
+    transition: color 2s, width 2s;
+}
+
+.contribute {
+    background-color: rgb(79, 165, 53);
+    color: rgb(243, 242, 253);
+    top: 20%;
+}
+
+.contribute:hover {
+    color: white;
+    background-color: rgb(98, 175, 10);
+}
+
+.delete {
+    background-color: rgb(139, 61, 61);
+    color: rgb(243, 242, 253);
+    top: 40%;
+}
+
+.delete:hover {
+    color: white;
+    background-color: rgb(185, 22, 22);
+}
+
+.edit {
+    background-color: darkslateblue;
+    color: rgb(243, 242, 253);
+    top: 30%;
+}
+
+
+.edit:hover {
+    color: white;
+    background-color: rgb(53, 25, 190);
+}
+
+.articles-container {
+
+    .article-preview {
+        margin-bottom: 60px;
+        h2 {
+            font-size: 30px;
+            color: #666;
+            font-family: 'Nova Oval', cursive;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: brown;
+            font-size: 20px;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.subpages-blog-title {
+    font-family: 'Nova Oval', cursive;
+    margin: 15px;
+
+    a {
+        text-decoration: none;
+        color: #888;
+        transition: color 1s;
+    }
+
+    a:hover {
+        color: #333;
+    }
+}
+
+.article-container {
+
+    h1 {
+        margin-bottom: 15px;
+        font-size: 40px;
+        font-family: 'Nova Oval', cursive;
+        color: #555;
+    }
+
+    hr {
+        color: #888;
+        margin: 30px auto 50px auto;
+        width: 85%;
+    }
+
+    .excerpt {
+        font-size: 25px;
+    }
+
+    .body {
+        font-size: 22px;
+        margin-bottom: 80px;
+    }
+
+}
+
+.new-container {
+
+    h1 {
+        margin-bottom: 15px;
+        font-size: 40px;
+        font-family: 'Nova Oval', cursive;
+        color: #555;
+    }
+
+    min-height: 400px;
+    max-height: auto;
+
+    form {
+        div {
+            .excerpt {
+                height: 70px;
+            }
+            .body {
+                height: 230px;
+            }
+
+            .error {
+                color: crimson;
+            }
+        }
+
+        .submit-btn {
+            margin-top: 50px;
+        }
+    }
+    hr {
+        color: #888;
+        margin: 30px auto 50px auto;
+        width: 85%;
+    }
+
+}
